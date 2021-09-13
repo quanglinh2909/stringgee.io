@@ -1,0 +1,15 @@
+.login{
+  padding: 20px;
+}
+.call-video{
+  padding: 20px;
+  display: flex;
+}
+.cuoc-goi-den{
+  padding: 20px;
+  display: none;
+}
+#btn-tat-may{
+  display: none;
+  float: right;
+}

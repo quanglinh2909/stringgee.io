@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title> Zoom </title>
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- import the webpage's javascript file -->
+  <script src="jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.20.0/dist/axios.min.js"></script>
+  <script src="https://cdn.stringee.com/sdk/web/2.2.1/stringee-web-sdk.min.js"></script>
+
+  <script src="/api.js"></script>
+  <!-- <script src="/call.js"></script> -->
+  <script src="./mycall.js"></script>
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1 id="name-user"></h1>
+      <div class="login">
+        <input type="text" placeholder="nameUser" id="nameUser">
+        <button onclick="ketnoi()">Login</button>
+      </div>
+
+      <div class="call-video">
+        <input type="text" placeholder="Friend" id="name-fiend">
+        <button onclick="call()">call Video</button>
+        <button onclick = "tatMay()" id="btn-tat-may">Tắt Máy</button>
+      </div>
+      <div class="cuoc-goi-den" id="cuoc-goi">
+         <button onclick="ngheMay()">Nghe máy</button>
+         <button onclick="tuChoi()">Từ chối</button>
+      </div>
+    </div>
+    <video id="localVideo" autoplay muted style="width: 300px; height: 300px; background-color: black;"></video>
+    <video id="remoteVideo" autoplay style="width: 300px; height: 300px; background-color: black;"></video>
+  </div>
+
+  <!-- <script>
+  function myFunction() {
+    var x = document.getElementById("nameUser").value;
+    alert(x);
+  }
+  </script> -->
+</body>
+
+</html>
